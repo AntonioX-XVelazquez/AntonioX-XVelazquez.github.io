@@ -1,13 +1,6 @@
-function toggleSection(sectionId) {
-    const sections = document.querySelectorAll('section[id]');
-    sections.forEach((section) => {
-      section.classList.add('hidden');
+function showSection(sectionId) {
+    document.querySelectorAll("main section").forEach((section) => {
+        section.classList.remove("active");
     });
-
-    const sectionToShow = document.getElementById(sectionId);
-    sectionToShow.classList.remove('hidden');
-  }
-
-
-  window.onload = function() {
-    toggleSection('What');};
+    document.getElementById(sectionId).classList.add("active");
+}
