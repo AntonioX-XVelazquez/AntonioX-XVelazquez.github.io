@@ -49,6 +49,20 @@ section {
 }
 
 figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 0.9em;
   font-style: bold;
+}
+
+figure {
+  margin: 10px 0;
+  text-align: center;
+}
+figure img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 5px;
 }
 
