@@ -47,3 +47,8 @@ section {
 .active {
   display: block;
 }
+
+figcaption {
+  font-style: bold;
+}
+
