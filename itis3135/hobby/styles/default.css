@@ -11,6 +11,7 @@ h1, h2, p, ul{
 header {
     background-color: #1a472a;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
