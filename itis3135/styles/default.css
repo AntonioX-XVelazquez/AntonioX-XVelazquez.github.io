@@ -2,6 +2,46 @@ body {
     color: #a7acab;
     background-color: #2a623d;
 }
+
 h1, h2{
     text-align: center;
 }
+
+.box {
+    width: 80%;            
+    margin-left: auto;
+    margin-right: auto;          
+    background-color: #1a472a;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2a623d; 
+    padding: 10px;
+  }
+ 
+  .footer a {
+    text-decoration: none;
+    margin: 0 10px; 
+    color:  #b3cde0;
+  }
+  .footer a:visited {
+    color: #ff6f69;
+  }
+  .footer a:hover {
+    color: #fdb00b; 
+  }
+  .footer a:active {
+    color: #fdd32b;
+  }
+
+  .separator {
+    margin: 0 10px;
+    font-weight: bold;
+  }
