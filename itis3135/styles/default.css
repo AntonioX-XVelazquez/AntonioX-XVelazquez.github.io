@@ -40,13 +40,13 @@ h1, h2{
     color:  #b3cde0;
   }
   .footer a:visited {
-    color: #ff6f69;
+    color: #b3cde0;
   }
   .footer a:hover {
     color: #fdb00b; 
   }
   .footer a:active {
-    color: #fdd32b;
+    color: #ff6f69;
   }
 
   .separator {
