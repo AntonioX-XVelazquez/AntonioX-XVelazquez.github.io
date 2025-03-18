@@ -3,11 +3,16 @@ body {
     background-color: #2a623d;
     font-family: sans-serif;
 }
-h1, h2{
+h1, h2, p{
     text-align: center;
+    color: #a8ddce;
 }
 
-.container {
+
+
+
+
+/*.container {
     display: flex;
     justify-content: center;  
     align-items: center;      
@@ -50,4 +55,4 @@ h1, h2{
   .separator {
     margin: 0 10px;
     font-weight: bold;
-  }
+  }*/
