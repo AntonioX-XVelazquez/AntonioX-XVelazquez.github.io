@@ -15,7 +15,20 @@ h1, h2{
     background-color: #f1f1f1; 
     padding: 10px;
   }
+ 
   .footer a {
     text-decoration: none;
     margin: 0 10px; 
+    color:  #b3cde0;
   }
+  .footer a:visited {
+    color: #ff6f69;
+  }
+  .footer a:hover {
+    color: #ffeead; 
+  }
+
+  .footer a:active {
+    color: #ffcc5c;
+  }
+
