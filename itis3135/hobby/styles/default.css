@@ -10,6 +10,7 @@ h1, h2, p{
 
 ul {
     color: #ffffff;
+    list-style-position: inside;
 }
 
 header {
