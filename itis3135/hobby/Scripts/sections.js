@@ -1,6 +1,5 @@
 function toggleSection(sectionId) {
-
-    const sections = document.querySelectorAll('div[id^="section"]');
+    const sections = document.querySelectorAll('section[id]');
     sections.forEach((section) => {
       section.classList.add('hidden');
     });
@@ -9,6 +8,6 @@ function toggleSection(sectionId) {
     sectionToShow.classList.remove('hidden');
   }
 
+
   window.onload = function() {
-    toggleSection('section1');
-  };
+    toggleSection('What');};

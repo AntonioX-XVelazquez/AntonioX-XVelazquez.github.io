@@ -13,13 +13,13 @@
     <header>
         <h1>My Hobby</h1>
         <nav>
-            <a onclick="toggleSection('What')">Driving</a> | 
-            <a onclick="toggleSection('Who')">About me</a> | 
-            <a onclick="toggleSection('When')">Best Time to Fish</a> | 
-            <a onclick="toggleSection('Where')">Best Places to Drive</a> | 
-            <a onclick="toggleSection('How')">How to Drive</a> | 
-            <a onclick="toggleSection('Why')">Why I Enjoy Driving</a> | 
-            <a onclick="toggleSection('AI')">AI Prompts</a>
+            <button onclick="toggleSection('What')">Driving</button> | 
+            <button onclick="toggleSection('Who')">About me</button> | 
+            <button onclick="toggleSection('When')">Best Time to Fish</button> | 
+            <button onclick="toggleSection('Where')">Best Places to Drive</button> | 
+            <button onclick="toggleSection('How')">How to Drive</button> | 
+            <button onclick="toggleSection('Why')">Why I Enjoy Driving</button> | 
+            <button onclick="toggleSection('AI')">AI Prompts</button>
         </nav>
     </header>
     <main>
@@ -115,8 +115,8 @@
         <p class="footer">Designed by <a href="https://webpages.charlotte.edu/avelazq8/Agile Viper INC/index.html">Agile Viper INC ©®™ 2025</a></p>
     </footer>
     <script>
-    function toggleSection(sectionId) {
-      const sections = document.querySelectorAll('div[id^="section"]');
+    function toggleSection(sectionId) { 
+      const sections = document.querySelectorAll('section[id]');
       sections.forEach((section) => {
         section.classList.add('hidden');
       });
@@ -124,7 +124,7 @@
       sectionToShow.classList.remove('hidden');
     }
     window.onload = function() {
-      toggleSection('section1');
+      toggleSection('What');
     };
     </script>
 </body>
