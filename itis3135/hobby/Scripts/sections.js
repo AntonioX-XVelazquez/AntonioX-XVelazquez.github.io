@@ -1,6 +1,10 @@
 function toggleSection(sectionId) {
-    document.querySelectorAll("main section").forEach((section) => {
-        section.classList.remove("active");
-    });
-    document.getElementById(sectionId).classList.add("active");
-}
+    var section = document.getElementById(sectionId);
+    if (section.style.display === 'none' || section.classList.contains('hidden')) {
+      section.style.display = 'block';  
+      section.classList.remove('hidden');
+    } else {
+      section.style.display = 'none';  
+      section.classList.add('hidden');
+    }
+  }
