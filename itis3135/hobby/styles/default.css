@@ -8,7 +8,11 @@ h1, h2, p{
     color: #a8ddce;
 }
 
-
+header {
+    background-color: #1a472a;
+    color:aquamarine;
+    padding: 10px;
+}
 
 
 
