@@ -27,7 +27,6 @@ h1, h2{
 .footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
     text-align: center;
     background-color: #2a623d; 
     padding: 10px;
