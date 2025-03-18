@@ -10,7 +10,6 @@ h1, h2, p, ul{
 
 header {
     background-color: #1a472a;
-    color:aquamarine;
     padding: 10px;
 }
 
@@ -23,12 +22,22 @@ nav a {
   text-align: center;
 }
 
-nav a.hover {
+nav a:hover {
   color:aquamarine;
 }
 
+.footerLinks{
+  margin: 0 15px;
+  text-decoration: none;
+  color:aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
 
-
+.footerLinks:hover {
+  color:aquamarine;
+}
 /*.container {
     display: flex;
     justify-content: center;  
