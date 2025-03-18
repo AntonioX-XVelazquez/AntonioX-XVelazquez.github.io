@@ -3,7 +3,7 @@ body {
     background-color: #2a623d;
     font-family: sans-serif;
 }
-h1, h2, p{
+h1, h2, p, ul{
     text-align: center;
     color: #ffffff;
 }
