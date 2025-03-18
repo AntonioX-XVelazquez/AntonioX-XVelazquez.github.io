@@ -23,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <section id="What" class="hidden">
+        <section id="What" class="visible">
             <h2>I Like Driving</h2>
             <p>Driving is one of my favorite hobbies. I enjoy the independance I have every time I sit in the drivers seat.</p>
             <p>Weither its on a track or on the road, driving can be a relaxing and liberating expereince./p>
@@ -73,16 +73,17 @@
         <p class="footer">Designed by <a href="https://webpages.charlotte.edu/avelazq8/Agile Viper INC/index.html">Agile Viper INC ©®™ 2025</a></p>
     </footer>
     <script>
-        function toggleSection(sectionId) {
-      var section = document.getElementById(sectionId);
-      if (section.style.display === 'none' || section.classList.contains('hidden')) {
-        section.style.display = 'block';  
-        section.classList.remove('hidden');
-      } else {
-        section.style.display = 'none';   
+    function toggleSection(sectionId) {
+      const sections = document.querySelectorAll('div[id^="section"]');
+      sections.forEach(section => {
         section.classList.add('hidden');
-      }
+      });
+      const sectionToShow = document.getElementById(sectionId);
+      sectionToShow.classList.remove('hidden');
     }
+    window.onload = function() {
+      toggleSection('section1');
+    };
     </script>
 </body>
 </html>
