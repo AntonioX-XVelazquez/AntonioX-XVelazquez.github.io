@@ -66,6 +66,10 @@ figure img {
   border-radius: 5px;
 }
 
+.leftA{
+  text-align: left;
+}
+
 .Home {
   height: 183px;
   width: 275px;
