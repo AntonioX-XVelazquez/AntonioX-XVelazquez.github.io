@@ -39,7 +39,6 @@ nav a {
   font-weight: bold;
   cursor: pointer;
 }
-
 section {
   display: none;
   padding: 20px;
@@ -67,3 +66,37 @@ figure img {
   border-radius: 5px;
 }
 
+.Home {
+  height: 183px;
+  width: 275px;
+}
+
+.AboutMe {
+  height: 384px;
+  width: 512px;
+}
+
+.When {
+  height: 168px;
+  width: 300px;
+}
+
+.Where {
+  height: 240px;
+  width: 320px;
+}
+
+.How {
+  height: 512px;
+  width: 512px;
+}
+
+.Why {
+  height: 168px;
+  width: 299px;
+}
+
+.AI {
+  height: 168px;
+  width: 156px;
+}
