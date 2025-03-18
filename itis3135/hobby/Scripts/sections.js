@@ -1,4 +1,4 @@
-function showSection(sectionId) {
+function toggleSection(sectionId) {
     document.querySelectorAll("main section").forEach((section) => {
         section.classList.remove("active");
     });
