@@ -1,11 +1,19 @@
 body {
     color: #a7acab;
     background-color: #2a623d;
+    font-family: sans-serif;
 }
 
 h1, h2{
     text-align: center;
 }
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100%;             
+  }
 
 .box {
     width: 80%;            
