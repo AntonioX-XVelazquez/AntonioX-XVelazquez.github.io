@@ -3,8 +3,12 @@ body {
     background-color: #2a623d;
     font-family: sans-serif;
 }
-h1, h2, p, ul{
+h1, h2, p{
     text-align: center;
+    color: #ffffff;
+}
+
+ul {
     color: #ffffff;
 }
 
@@ -23,7 +27,7 @@ nav a {
   text-align: center;
 }
 
-nav a:hover {
+.hover {
   color:aquamarine;
 }
 
@@ -35,9 +39,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-.footer:hover {
-  color:aquamarine;
-}
 /*.container {
     display: flex;
     justify-content: center;  
