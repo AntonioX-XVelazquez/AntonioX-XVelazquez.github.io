@@ -1,11 +1,11 @@
 body {
-    color: #a7acab;
+    color: #ffffff;
     background-color: #2a623d;
     font-family: sans-serif;
 }
 h1, h2, p{
     text-align: center;
-    color: #a8ddce;
+    color: #ffffff;
 }
 
 header {
@@ -17,10 +17,14 @@ header {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color:aquamarine;
+  color:aliceblue;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+}
+
+nav a.hover {
+  color:aquamarine;
 }
 
 
