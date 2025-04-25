@@ -62,6 +62,12 @@ font-size: 0.9em;
 font-style: bold;
 }
 
+.box {
+  background-color: #1a472a;
+  padding: 10px;
+  text-align: center;
+}
+
 figure {
 margin: 10px 0;
 text-align: center;
