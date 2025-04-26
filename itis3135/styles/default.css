@@ -122,9 +122,6 @@ border-radius: 5px;
         width: 100%;
         
     }
-    h1 {
-        font-size: 0.9rem;
-    }
     nav {
         flex-direction: column;
         text-align: center;
