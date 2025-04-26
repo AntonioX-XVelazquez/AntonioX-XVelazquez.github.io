@@ -18,6 +18,10 @@ header {
   padding: 10px;
   text-align: center;
 }
+main{
+  padding: 10px;
+  text-align: center;
+}
 
 nav a {
 margin: 0 15px;
@@ -79,3 +83,11 @@ border-radius: 5px;
     margin: 0 10px; 
     color:  #b3cde0;
   }
+  .footer{
+    margin: 0 15px;
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    }
