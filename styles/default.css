@@ -91,3 +91,17 @@ border-radius: 5px;
     cursor: pointer;
     text-align: center;
     }
+    .footer a {
+      text-decoration: none;
+      margin: 0 10px; 
+      color:  #b3cde0;
+    }
+    .footer a:visited {
+      color: #b3cde0;
+    }
+    .footer a:hover {
+      color: #fdb00b; 
+    }
+    .footer a:active {
+      color: #ff6f69;
+    }
