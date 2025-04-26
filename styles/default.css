@@ -32,20 +32,6 @@ text-align: center;
 color:aquamarine;
 }
 
-.footer{
-margin: 0 15px;
-text-decoration: none;
-color:aliceblue;
-font-weight: bold;
-cursor: pointer;
-}
-
-.footer a {
-text-decoration: none;
-margin: 0 10px;
-color:  #b3cde0;
-}
-
 section {
 display: none;
 padding: 20px;
@@ -78,28 +64,18 @@ max-width: 700px;
 height: auto;
 border-radius: 5px;
 }
-  .footer a {
-    text-decoration: none;
-    margin: 0 10px; 
-    color:  #b3cde0;
-  }
-  .footer a:visited {
+  main a:visited {
     color: #b3cde0;
   }
-  .footer a:hover {
+  main a:hover {
     color: #fdb00b; 
   }
-  .footer a:active {
+  main a:active {
     color: #ff6f69;
   }
 
-  header a {
+  main a {
     text-decoration: none;
     margin: 0 10px; 
     color:  #b3cde0;
-  }
-
-  .separator {
-    margin: 0 10px;
-    font-weight: bold;
   }

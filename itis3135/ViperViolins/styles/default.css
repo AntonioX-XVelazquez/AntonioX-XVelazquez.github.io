@@ -62,12 +62,6 @@ font-size: 0.9em;
 font-style: bold;
 }
 
-.box {
-  background-color: #1a472a;
-  padding: 10px;
-  text-align: center;
-}
-
 figure {
 margin: 10px 0;
 text-align: center;
@@ -91,12 +85,6 @@ border-radius: 5px;
   }
   .footer a:active {
     color: #ff6f69;
-  }
-
-  header a {
-    text-decoration: none;
-    margin: 0 10px; 
-    color:  #b3cde0;
   }
 
   .separator {
