@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
 }
 h1, h2, p{
-  text-align: center;
+  text-align: left;
   color: #ffffff;
 }
 
@@ -23,6 +23,29 @@ header {
   background-color: #1a472a;
   padding: 10px;
   text-align: center;
+}
+
+.main-box{
+  background-color: rgb(86, 84, 84);
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-trim{
+  background-color: rgb(46, 55, 178); 
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-center{
+  background-color: rgb(86, 84, 84);
+  padding: 10px;
+  text-align: left;
+  margin: -9px;
 }
 
 nav a {
@@ -72,6 +95,39 @@ font-style: bold;
   background-color: #1a472a;
   padding: 10px;
   text-align: center;
+}
+
+.box-trim{
+  background-color: #A49665; 
+  padding: 10px;
+  text-align:center;
+}
+
+.box-center{
+  background-color: #1a472a;
+  padding: 10px;
+  display:grid;
+  place-items:center;
+  margin: -9px;
+}
+
+.header-box {
+  background-color: #1a472a;
+  text-align: center;
+}
+
+.header-box-trim{
+  background-color: #A49665; 
+  padding: 10px;
+  text-align:center;
+}
+
+.header-box-center{
+  background-color: #1a472a;
+  padding: 5px 10px 10px 5px;
+  display:grid;
+  place-items:center;
+  margin: -9px;
 }
 
 figure {
