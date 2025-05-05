@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Recruit Project Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Royal Recruit</h1>
+        <div data-include="../components/RoyalHeader.html"></div>
+    </header>
+
+    <main>
+        <div class="main-box">
+            <div class="main-box-trim">
+                <div class="main-box-center">
+                    <h2>Apply Today</h2>
+                    <p>Welcome to the Royal Recruit application page.</p>
+                    <p>Please fill out the form below to apply for a position with us.</p>
+                    <form action="https://formspree.io/f/xldbbevy" method="post">
+
+                        <label for="position" style="text-align: center;">Personal Information</label><br>
+
+                        <label for="name" >First Name:</label>
+                        <input type="text" id="name" name="firstName" required placeholder ="*Required">
+
+                        <label for="name" >Last Name:</label>
+                        <input type="text" id="name" name="lastName" required placeholder ="*Required">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="email">Phone Number:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="email">:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="position" style="text-align: center;">Current Occupation</label> <br>
+
+                        <label>Current Employment Status</label> 
+                        <select id="position" name="position" type="position">
+                            <option value="Unemployed">Unemployed</option>
+                            <option value="Part-Time">Part-Time</option>
+                            <option value="Full-Time">Full-Time</option>
+                        </select><br><br>
+                        <input type="submit" value="Submit Application">
+                    </form>
+                </form>
+            </section>
+        </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div data-include="../components/RoyalFooter.html"></div>
+    </footer>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>

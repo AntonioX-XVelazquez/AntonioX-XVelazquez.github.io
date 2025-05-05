@@ -4,8 +4,14 @@ body {
   font-family: sans-serif;
 }
 h1, h2, p{
-  text-align: center;
+  text-align: left;
   color: #ffffff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width:70%;
 }
 
 ul {
@@ -17,6 +23,29 @@ header {
   background-color: #1a472a;
   padding: 10px;
   text-align: center;
+}
+
+.main-box{
+  background-color: rgb(86, 84, 84);
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-trim{
+  background-color: rgb(46, 55, 178); 
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-center{
+  background-color: rgb(86, 84, 84);
+  padding: 10px;
+  text-align: left;
+  margin: -9px;
 }
 
 nav a {
@@ -68,6 +97,39 @@ font-style: bold;
   text-align: center;
 }
 
+.box-trim{
+  background-color: #A49665; 
+  padding: 10px;
+  text-align:center;
+}
+
+.box-center{
+  background-color: #1a472a;
+  padding: 10px;
+  display:grid;
+  place-items:center;
+  margin: -9px;
+}
+
+.header-box {
+  background-color: #1a472a;
+  text-align: center;
+}
+
+.header-box-trim{
+  background-color: #A49665; 
+  padding: 10px;
+  text-align:center;
+}
+
+.header-box-center{
+  background-color: #1a472a;
+  padding: 5px 10px 10px 5px;
+  display:grid;
+  place-items:center;
+  margin: -9px;
+}
+
 figure {
 margin: 10px 0;
 text-align: center;
@@ -99,7 +161,29 @@ border-radius: 5px;
     color:  #b3cde0;
   }
 
-  .separator {
-    margin: 0 10px;
-    font-weight: bold;
+  @media screen and (min-width: 981px) and (max-width: 1400px) {
+    main {
+        width: 85%;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+    footer {
+        text-align: center;
+    }
+  }
+  @media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 100%;
+        
+    }
+    nav {
+        text-align: center;
+    }
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
   }

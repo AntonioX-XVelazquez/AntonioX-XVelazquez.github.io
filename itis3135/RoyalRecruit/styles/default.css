@@ -1,0 +1,250 @@
+body {
+  color: #ffffff;
+  background-color: rgb(167, 191, 212);
+  font-family: sans-serif;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative; 
+}
+h1, h2, p{
+  text-align: left;
+  color: black;
+}
+header h1{
+  text-align:center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width:70%;
+}
+
+ul {
+  color: #ffffff;
+  list-style-position: inside;
+}
+
+header {
+  background-color: #568cdb;
+  padding: 10px;
+  text-align: center;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.main-box{
+  background-color: #568cd1;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+.main-box-trim{
+  background-color: #273c57; 
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-center{
+  background-color: #568cd1;
+  padding: 10px;
+  text-align: left;
+  margin: -9px;
+}
+
+header nav a {
+margin: 0 15px;
+text-decoration: none;
+color:aliceblue;
+font-weight: bold;
+cursor: pointer;
+text-align: center;
+}
+
+footer nav{
+  margin: 0 15px;
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: medium;
+  }
+
+footer a {
+text-decoration: none;
+margin: 0 10px;
+color:  black;
+text-decoration: underline;
+}
+footer a:hover {
+  color:  rgb(74, 80, 81);
+  }
+footer{
+  bottom: 20px;
+  text-align: center;
+}
+section {
+display: none;
+padding: 20px;
+}
+
+.active {
+display: block;
+}
+
+figcaption {
+margin-top: 5px;
+font-style: italic;
+font-size: 0.9em;
+font-style: bold;
+}
+
+.header-box{
+  background-color: #21272f;
+  padding: 10px;
+  display:grid;
+  opacity: 0.5;
+  place-items:center;
+  margin: -10px;
+  border-radius: 10px, 10px, 0px, 0px;
+}
+
+figure {
+margin: 10px 0;
+text-align: center;
+}
+figure img {
+width: 100%;
+max-width: 700px;
+height: auto;
+border-radius: 5px;
+}
+
+  header button{
+    background-color: #21272f;;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  header button:hover{
+    background-color: #000000;
+  }
+
+  #get-involved-opening {
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    background-color: #F6F7EB;
+    text-align: center;
+}
+
+/*Apply Page*/ 
+.same-line {
+  display: inline-block;
+}
+form {
+  display: grid; 
+  grid-template-columns:auto ; 
+  align-items: center; 
+  gap: 1px;
+}
+form label {
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+  float: left; 
+  margin-right: 10px;
+}
+form input, form button {
+  padding: 0.1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(83, 86, 93);
+  border-radius: 10px;
+  font-size: 1rem; 
+}
+form input[type="name"]{
+  width: 80%;
+}
+/* Form Styling (Get Involved Page) */
+/*#get-involved-opening {
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    background-color: #F6F7EB;
+    text-align: center;
+}
+#petition-form {
+  padding: 3rem 4rem;
+  margin: 4rem auto;
+  max-width: 700px;
+  background-color: #DE8F6E;
+  border-radius: 25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+}
+form input, form textarea, form button {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  font-size: 1rem;
+  
+}
+#get-involved-opening p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.submit-button {
+  background-color: #4E3D42;
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: #3a2d31;
+}
+hr {
+  width: 80%;
+  height: 0.2rem;
+  background-color: #000000;
+}*/
+
+  @media screen and (min-width: 981px) and (max-width: 1400px) {
+    main {
+        width: 85%;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+    footer {
+        text-align: center;
+    }
+  }
+  @media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 100%;
+        
+    }
+    nav {
+        text-align: center;
+    }
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
+  }
