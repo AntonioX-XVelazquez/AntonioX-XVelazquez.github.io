@@ -14,7 +14,7 @@
         <h1>Royal Recruit</h1>
         <div class="header-box">  
             <nav>
-            <button class="nav-button"><a href="../itis3135/RoyalRecruit.org">Home</a></button>
+            <button class="nav-button"><a href="../itis3135/RoyalRecruit.com">Home</a></button>
             <button class="nav-button"><a href="../itis3135/RoyalRecruit/AboutUs.html">About Us</a></button>
             <button class="nav-button"><a href="../itis3135/RoyalRecruit/ApplyToday.html">Apply Today</a></button>
             <button class="nav-button"><a href="../itis3135/RoyalRecruit/LocalEvents.html">Local Events</a></button>
