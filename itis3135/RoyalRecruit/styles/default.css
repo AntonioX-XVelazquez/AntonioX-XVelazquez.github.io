@@ -172,55 +172,7 @@ form input, form button {
 form input[type="name"]{
   width: 80%;
 }
-/* Form Styling (Get Involved Page) */
-/*#get-involved-opening {
-    padding: 5rem 3rem;
-    margin: 0 auto;
-    background-color: #F6F7EB;
-    text-align: center;
-}
-#petition-form {
-  padding: 3rem 4rem;
-  margin: 4rem auto;
-  max-width: 700px;
-  background-color: #DE8F6E;
-  border-radius: 25px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-}
-form label {
-  margin: 1rem 0 0.5rem;
-  font-weight: bold;
-}
-form input, form textarea, form button {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid rgb(231, 231, 231);
-  border-radius: 5px;
-  font-size: 1rem;
-  
-}
-#get-involved-opening p {
-  margin: 1rem 0;
-  font-size: 1.2rem;
-}
-.submit-button {
-  background-color: #4E3D42;
-  color: rgb(231, 231, 231);
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-.submit-button:hover {
-  background-color: #3a2d31;
-}
-hr {
-  width: 80%;
-  height: 0.2rem;
-  background-color: #000000;
-}*/
+
 
   @media screen and (min-width: 981px) and (max-width: 1400px) {
     main {
