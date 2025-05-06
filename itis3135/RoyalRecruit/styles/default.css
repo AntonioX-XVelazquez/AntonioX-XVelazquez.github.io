@@ -336,6 +336,14 @@ button:hover {
   background-color: #007BFF;
   color: white;
 }
+/*Images*/
+img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+  justify-content: center;
+}
 
 /*Media Queries*/
   @media screen and (min-width: 981px) and (max-width: 1400px) {
