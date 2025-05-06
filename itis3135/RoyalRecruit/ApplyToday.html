@@ -11,56 +11,96 @@
 <body>
 
     <header>
-        <h1>Royal Recruit</h1>
-        <div data-include="../components/RoyalHeader.html"></div>
+        <div data-include="components/RoyalHeader.html"></div>
     </header>
 
     <main>
         <div class="main-box">
             <div class="main-box-trim">
                 <div class="main-box-center">
-                    <h2>Apply Today</h2>
-                    <p>Welcome to the Royal Recruit application page.</p>
-                    <p>Please fill out the form below to apply for a position with us.</p>
+                    <h2>Help Us Better Your Future</h2>
+                    <br>
+                    <p>Please fill out the form below so we can send your application to companies in the CS Industry.</p>
+                    <p>*We will send you an email with the results of your application. We will not share your information with any third parties.</p>
+                    <br><br>
+                    <hr>
+                    <br>
+
                     <form action="https://formspree.io/f/xldbbevy" method="post">
 
                         <label for="position" style="text-align: center;">Personal Information</label><br>
 
                         <label for="name" >First Name:</label>
-                        <input type="text" id="name" name="firstName" required placeholder ="*Required">
+                        <input type="text" id="name" name="firstName" required placeholder ="">
 
                         <label for="name" >Last Name:</label>
-                        <input type="text" id="name" name="lastName" required placeholder ="*Required">
+                        <input type="text" id="name" name="lastName" required placeholder ="">
 
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
 
-                        <label for="email">Phone Number:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="phone" id="phone" name="phone" required>
 
-                        <label for="email">:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="state">State:</label>
+                        <select id="state" name="state" required>
+                            <option value="" disabled selected>-- Select --</option>
+                            <option value="FL">Florida</option>
+                            <option value="NY">New York</option>
+                            <option value="VA">Virginia</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="GA">Georgia</option>
+                        </select>
+
+                        <label for="city">Select a City:</label>
+                        <select id="city" name="city" disabled required>
+                            <option value="" disabled selected>-- Select --</option>
+                        </select>
 
                         <label for="position" style="text-align: center;">Current Occupation</label> <br>
 
-                        <label>Current Employment Status</label> 
-                        <select id="position" name="position" type="position">
-                            <option value="Unemployed">Unemployed</option>
-                            <option value="Part-Time">Part-Time</option>
-                            <option value="Full-Time">Full-Time</option>
-                        </select><br><br>
-                        <input type="submit" value="Submit Application">
+                        <label for="employmentStatus">Employment Status:</label>
+                        <select id="employmentStatus" name="employmentStatus">
+                        <option value="">-- Select --</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="full-time">Full-time</option>
+                        </select>
+
+                        <div id="employmentHoursDiv" class="hidden">
+                        <label for="employmentHours">How many hours per week?</label>
+                        <input type="number" id="employmentHours" name="employmentHours" min="0">
+                        </div>
+
+                        <label for="collegeStatus">College Status:</label>
+                        <select id="collegeStatus" name="collegeStatus">
+                        <option value="">-- Select --</option>
+                        <option value="not-student">Not a Student</option>
+                        <option value="student">Student</option>
+                        </select>
+
+                        <div id="creditHoursDiv" class="hidden">
+                        <label for="creditHours">How many credit hours?</label>
+                        <input type="number" id="creditHours" name="creditHours" min="0">
+                        </div><br>
+
+                        <label for="position" style="text-align: center;">Skills & Prior Work Experience</label>
+                        <textarea  type="text" id="skills" name="skills" rows="15" cols="50"></textarea><br>
+
+                        <input class="submit" type="submit" value="Submit Application">
                     </form>
                 </form>
             </section>
-        </div>
+            </div>
         </div>
     </div>
     </main>
     <footer class="footer">
-        <div data-include="../components/RoyalFooter.html"></div>
+        <div data-include="components/RoyalFooter.html"></div>
     </footer>
-    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/sections.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 
 </body>
 </html>

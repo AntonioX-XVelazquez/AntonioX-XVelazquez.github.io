@@ -1,18 +1,16 @@
 body {
-  color: #ffffff;
   background-color: rgb(167, 191, 212);
-  font-family: sans-serif;
+  font-family: Georgia,sans-serif;
   display: flex; 
   flex-direction: column;
   min-height: 100vh;
   position: relative; 
+  padding-top: 100px;
+
 }
 h1, h2, p{
   text-align: left;
-  color: black;
-}
-header h1{
-  text-align:center;
+  color: white;
 }
 
 main {
@@ -27,21 +25,65 @@ ul {
 }
 
 header {
-  background-color: #568cdb;
-  padding: 10px;
-  text-align: center;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #000000;
+  padding: 1rem 15%;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease
 }
 
+header nav {
+  display: flex;
+  gap: 2rem;
+  align-items: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: #568cd1; 
+}
+
+
+
+/*Main Section*/
 .main-box{
   background-color: #568cd1;
   padding: 10px;
+  padding-top: 10px;
   text-align: left;
   margin-bottom: 10px;
   margin-top: 10px;
   border-radius: 10px;
   font-size: medium;
+}
+
+.main-box h3{
+  color: white;
+  padding: 10px;
+  padding-top: 10px;
+  text-align: center;
+  align-items: center;
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 50px;
 }
 
 .main-box-trim{
@@ -59,15 +101,57 @@ header {
   margin: -9px;
 }
 
-header nav a {
-margin: 0 15px;
-text-decoration: none;
-color:aliceblue;
-font-weight: bold;
-cursor: pointer;
-text-align: center;
+main nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
+main nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+main nav a:hover {
+  color: black; 
+}
+p.main-notbox, h2.main-notbox{
+  text-align: left; 
+  color: black;
+  margin: 30px;
+  padding: 0px;
+ 
+}
+
+.back{
+  background-color: #9da7b4;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+li {
+  list-style-type: none
+}
+
+hr{
+  border: 1px solid white;
+  background-color: white;
+  margin: 10px 0;
+  height: 1px;
+  border-radius: 5px;
+}
+
+ /*Footer*/
 footer nav{
   margin: 0 15px;
   text-decoration: none;
@@ -75,20 +159,28 @@ footer nav{
   font-weight: bold;
   cursor: pointer;
   font-size: medium;
+  color: white;
   }
 
 footer a {
 text-decoration: none;
 margin: 0 10px;
-color:  black;
+color: white;
 text-decoration: underline;
 }
 footer a:hover {
-  color:  rgb(74, 80, 81);
+  color:  #568cd1;
   }
 footer{
   bottom: 20px;
   text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 section {
 display: none;
@@ -106,16 +198,6 @@ font-size: 0.9em;
 font-style: bold;
 }
 
-.header-box{
-  background-color: #21272f;
-  padding: 10px;
-  display:grid;
-  opacity: 0.5;
-  place-items:center;
-  margin: -10px;
-  border-radius: 10px, 10px, 0px, 0px;
-}
-
 figure {
 margin: 10px 0;
 text-align: center;
@@ -127,24 +209,7 @@ height: auto;
 border-radius: 5px;
 }
 
-  header button{
-    background-color: #21272f;;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
 
-  header button:hover{
-    background-color: #000000;
-  }
-
-  #get-involved-opening {
-    padding: 5rem 3rem;
-    margin: 0 auto;
-    background-color: #F6F7EB;
-    text-align: center;
-}
 
 /*Apply Page*/ 
 .same-line {
@@ -162,18 +227,117 @@ form label {
   float: left; 
   margin-right: 10px;
 }
-form input, form button {
-  padding: 0.1rem;
-  margin-bottom: 1rem;
-  border: 1px solid rgb(83, 86, 93);
-  border-radius: 10px;
-  font-size: 1rem; 
-}
-form input[type="name"]{
-  width: 80%;
-}
 
 
+.hidden {
+  display: none;
+}
+label, select, input {
+  display: block;
+  margin: 10px 0;
+}
+
+input.submit {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+input.submit:hover {
+  color: #568cd1;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+main h2, main p{
+  text-align: center;
+}
+main h2{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.main-box-center button {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  font-size: 1rem;
+  align-items: center;
+}
+/*Events page*/
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #568cd1;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  color: #568cd1;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.active-btn {
+  background-color: #568cd1;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.toggle-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eee;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+/*Media Queries*/
   @media screen and (min-width: 981px) and (max-width: 1400px) {
     main {
         width: 85%;
