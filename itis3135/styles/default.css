@@ -75,6 +75,11 @@
     color:  #b3cde0;
     }
 
+    #canvas {
+      display: flex;
+      justify-content: center;
+    }
+
     section {
     display: none;
     padding: 20px;
