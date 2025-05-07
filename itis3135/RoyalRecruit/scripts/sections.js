@@ -21,12 +21,7 @@ stateSelect.addEventListener('change', function() {
 
         citySelect.disabled = false;
     
-        cities.forEach(city => {
-            const option = document.createElement('option');
-            option.value = city.toLowerCase().replace(/ /g, '-'); 
-            option.textContent = city;
-            citySelect.appendChild(option);
-        });
+        cities.forEach((city) => {const option = document.createElement('option');option.value = city.toLowerCase().replace(/ /g, '-'); option.textContent = city;citySelect.appendChild(option);});
     }
 });
 
@@ -42,7 +37,7 @@ stateSelect.addEventListener('change', function() {
         citySelect.disabled = false;
 
         
-        cities.forEach(city => {
+        cities.forEach((city) => {
             const option = document.createElement('option');
             option.value = city.toLowerCase().replace(/ /g, '-'); 
             option.textContent = city;
@@ -76,10 +71,10 @@ const employmentSelect = document.getElementById("employmentStatus");
     });
 
     function showSection(sectionId, btn) {
-      document.querySelectorAll('.content-section').forEach(sec => {
+      document.querySelectorAll('.content-section').forEach((sec) => {
         sec.classList.remove('active');
       });
-      document.querySelectorAll('.button-container button').forEach(button => {
+      document.querySelectorAll('.button-container button').forEach((button) => {
         button.classList.remove('active-btn');
       });
   
@@ -87,9 +82,8 @@ const employmentSelect = document.getElementById("employmentStatus");
       btn.classList.add('active-btn');
     }
 
-    function toggleInterest() {
-      const btn = document.getElementById('interestBtn');
-      btn.classList.toggle('active');
-      btn.textContent = btn.classList.contains('active') ? 'Interested' : 'Add to Interests';
+    function toggleInterest(button) {
+      button.classList.toggle('active');
+      button.textContent = button.classList.contains('active') ? 'Interested' : 'Add to Interests';
     }
 
