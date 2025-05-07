@@ -198,6 +198,7 @@ tr {
 .top{
   background-color: black;
   color:white;
+  text-align: center;
 }
 .side{
   background-color: rgb(130, 130, 130);
