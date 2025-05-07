@@ -4,7 +4,7 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Velazquez's Agile Viper| ITIS 3135 | Home</title>
+    <title>Antonio Velazquez's Agile Viper| ITIS 3135 | BYO</title>
     <link rel="stylesheet" href="styles/default.css">
     
 </head>
@@ -16,18 +16,92 @@
         <div class="main-box">
             <div class="main-box-trim">
                 <div class="main-box-center">
-        <h2>Home</h2>
-        <p>Welcome to my ITIS 3135 website!</p>
-        <p>My name is <strong>Antonio Velazquez</strong> and I am a student at UNCC.</p>
-        <p>My favorite hobbies are: Working out, playing video games, driving</p>
+                    <form id="introForm">
+
+                        <div class="inline">
+                            <div class="field-group">
+                                <label for="Firstname">First Name:</label>
+                                <input type="text" id="Firstname" placeholder="Antonio" name="Firstname" required>
+                            </div>
+                        
+                            <div class="field-group">
+                                <label for="Lastname">Last Name:</label>
+                                <input type="text" id="Lastname" placeholder="Velazquez" name="Lastname" required><br><br>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="mascot">Mascot:</label>
+                                <input type="text" id="mascot" placeholder="AgileViper" name="mascot"  required><br><br>
+                                </div>
+                            
+                        </div>
+                        
+                        <div class="field-group">
+                            <label for="image">Image: (PNG and JPG Acceptable)</label>
+                            <input type="file" id="image" accept="image/png, image/jpeg" required><br><br>
+                        </div>
+                         
+                        <div class="field-group">
+                        Image Caption: <input type="text" id="Imagecaption" placeholder="Selfie In a Suit" name="Imagecaption" required><br><br>
+                        </div>
+
+                        <div class="field-group">
+                        Personal Background: <input type="text" id="Personalbackground" placeholder="I grew up in Charlotte, North Carolina" name="Personalbackground" required><br><br>
+                        </div>
+
+                        <div class="field-group">
+                        Professional Background: <input type="text" id="Professionalbackground" placeholder="I have worked at Sherwin Willimas as a Part Time Sales Associate " name="Professionalbackground"  required><br><br>
+                        </div>
+
+                        <div class="field-group">
+                        Academic Background: <input type="text" id="Academicbackground" placeholder="Sophomore at UNC Charlotte" name="Professionalbackground"  required><br><br>
+                        </div>
+                        
+                        <div class="inline">
+                        <div class="field-group">
+                        Background in Web Development: <input type="text" id="Webdevbackground" placeholder="Familiar With: Python, C, HTML and Java" name="Webdevbackground"  required><br><br>
+                        </div>
+
+                        <div class="field-group">
+                        Primary Computer Platform: <input type="text" id="Computerplatform" placeholder="Windows 11" name="Computerplatform"  required><br><br>
+                        </div>  
+                        </div><br><br>
+
+
+
+                        <div id="courses-section">
+                            <label>Courses currently taking:</label><br>
+                            <div id="courses"></div>
+                            <button type="button" id="addCourseButton">Add Course</button>
+                            <button type="button" id="deleteLastCourseButton">Delete Last Course</button><br><br>
+                        </div>
+                        
+
+
+                        <div class="inline">
+                        <div class="field-group">
+                        Funny thing? <input type="text" id="Funnything" name="Funnything"  placeholder="Whats 9+10?"><br><br>
+                        </div>
+
+                        <div class="field-group">
+                        Anything else? <input type="text" id="Anythingelse" name="Anythingelse"  placeholder="Sorry for the late submission"><br><br>
+                        </div>
+                        </div>
+
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br><br>
+                        <input type="submit" id="submit" value="Submit">
+                        <input type="reset" id="reset" value="Reset">
+                    </form>            
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </main>
     <footer class="footer">
         <div data-include="../components/footer.html"></div>
     </footer>
     <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/byo.js"></script>
 
 </body>
 </html>

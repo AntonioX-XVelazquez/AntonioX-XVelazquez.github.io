@@ -103,3 +103,112 @@ border-radius: 5px;
     margin: 0 10px;
     font-weight: bold;
   }
+  .box {
+    background-color: #1a472a;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .box-trim{
+    background-color: #A49665; 
+    padding: 10px;
+    text-align:center;
+  }
+
+  .box-center{
+    background-color: #1a472a;
+    padding: 10px;
+    display:grid;
+    place-items:center;
+    margin: -9px;
+  }
+
+  .header-box {
+    background-color: #1a472a;
+    text-align: center;
+  }
+
+  .header-box-trim{
+    background-color: #A49665; 
+    padding: 10px;
+    text-align:center;
+  }
+
+  .header-box-center{
+    background-color: #1a472a;
+    padding: 5px 10px 10px 5px;
+    display:grid;
+    place-items:center;
+    margin: -9px;
+  }
+
+  .main-box{
+    background-color: rgb(86, 84, 84);
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .main-box-trim{
+    background-color: rgb(46, 55, 178); 
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .main-box-center{
+    background-color: rgb(86, 84, 84);
+    padding: 10px;
+    text-align: left;
+    margin: -9px;
+  }
+
+
+.inline {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.course-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1 1  40%;
+  min-width: 150px;
+  border-radius: 5px;
+  font-size: .75rem;
+}
+
+#submit, #reset,  button {
+  background-color: #1a472a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+#submit:hover, #reset:hover, button:hover {
+  background-color: #568cd1;
+  color: #ffffff;
+} 
+
+
+
+
