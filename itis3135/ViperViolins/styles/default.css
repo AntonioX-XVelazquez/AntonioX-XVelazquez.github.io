@@ -155,7 +155,69 @@ border-radius: 5px;
   .footer a:active {
     color: #ff6f69;
   }
+
+  .header a {
+    text-decoration: none;
+    margin: 0 10px; 
+    color:  #a5c8e1;
+  }
+  .header a:visited {
+    color: #b3cde0;
+  }
+  .header a:hover {
+    color: #fdb00b; 
+  }
+  .header a:active {
+    color: #ff6f69;
+  }
   
+  /* Table */
+  table {
+    width: 100%;
+    margin: 8px auto;
+    border-collapse: collapse;
+}
+th, td {
+  padding: 5px 10px;
+  border: 1px solid rgb(0, 0, 0);
+} 
+tr {
+  text-align: left;
+}
+
+.simple{
+  background-color: lightgrey;
+  color:black;
+}
+
+.complex{
+  background-color: rgb(179, 116, 116);
+  color:black;
+}
+
+.top{
+  background-color: black;
+  color:white;
+}
+.side{
+  background-color: rgb(130, 130, 130);
+  color:black;
+}
+
+.alt1{
+  background-color: lightgrey;
+  color:black;
+}
+
+.alt2{
+  background-color: rgb(168, 143, 143);
+  color:black;
+}
+
+.totals{
+  background-color:rgb(130, 130, 130);
+  color:black;
+}
 
   @media screen and (min-width: 981px) and (max-width: 1400px) {
     main {

@@ -154,6 +154,21 @@
       .footer a:active {
         color: #ff6f69;
       }
+
+      .header a {
+        text-decoration: none;
+        margin: 0 10px; 
+        color:  #a5c8e1;
+      }
+      .header a:visited {
+        color: #b3cde0;
+      }
+      .header a:hover {
+        color: #fdb00b; 
+      }
+      .header a:active {
+        color: #ff6f69;
+      }
       
 
       @media screen and (min-width: 981px) and (max-width: 1400px) {
