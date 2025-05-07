@@ -1,11 +1,17 @@
 body {
   color: #ffffff;
-  background-color: #2a623d;
+  background-color: #723434;
   font-family: sans-serif;
 }
 h1, h2, p{
-  text-align: center;
+  text-align: left;
   color: #ffffff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width:70%;
 }
 
 ul {
@@ -14,9 +20,33 @@ ul {
 }
 
 header {
-  background-color: #1a472a;
+  background-color: #632727;
   padding: 10px;
   text-align: center;
+}
+
+.main-box{
+  background-color: rgb(70, 26, 26);
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-trim{
+  background-color: rgb(35, 4, 4); 
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-box-center{
+  background-color: rgb(70, 26, 26);
+  padding: 10px;
+  text-align: left;
+  margin: -9px;
+  border-radius: 50px;
 }
 
 nav a {
@@ -62,6 +92,45 @@ font-size: 0.9em;
 font-style: bold;
 }
 
+.box {
+  background-color: #632727;
+  padding: 10px;
+  text-align: center;
+}
+
+.box-trim{
+  background-color: #2e0606; 
+  padding: 10px;
+  text-align:center;
+}
+
+.box-center{
+  background-color: #632727;
+  padding: 10px;
+  display:grid;
+  place-items:center;
+  margin: -9px;
+}
+
+.header-box {
+  background-color: #000000;
+  text-align: center;
+}
+
+.header-box-trim{
+  background-color: #2e0606; 
+  padding: 10px;
+  text-align:center;
+}
+
+.header-box-center{
+  background-color: #632727;
+  padding: 5px 10px 10px 5px;
+  display:grid;
+  place-items:center;
+  margin: -9px;
+}
+
 figure {
 margin: 10px 0;
 text-align: center;
@@ -75,7 +144,7 @@ border-radius: 5px;
   .footer a {
     text-decoration: none;
     margin: 0 10px; 
-    color:  #b3cde0;
+    color:  #a5c8e1;
   }
   .footer a:visited {
     color: #b3cde0;
@@ -86,8 +155,31 @@ border-radius: 5px;
   .footer a:active {
     color: #ff6f69;
   }
+  
 
-  .separator {
-    margin: 0 10px;
-    font-weight: bold;
+  @media screen and (min-width: 981px) and (max-width: 1400px) {
+    main {
+        width: 85%;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+    footer {
+        text-align: center;
+    }
+  }
+  @media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 100%;
+        
+    }
+    nav {
+        text-align: center;
+    }
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
   }

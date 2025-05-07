@@ -4,48 +4,41 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Velazquez's Agile Viper| ITIS 3135 | Home</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <title>Royal Recruit Project Home</title>
+    <link rel="stylesheet" href="RoyalRecruit/styles/default.css">
     
 </head>
 <body>
+
     <header>
-        <h1>Antonio Velazquez's Agile Viper | ITIS 3135</h1>
-        <div class="headerLinks">
-            <nav>
-                <a href="AgileViperINC/index.html">Design Firm</a>||
-                <a href="ViperViolins//index.html">Whimsical Company</a>||
-                <a href="CRAPPY/index.html">CRAPPY Page</a>
-                <a href="hobby/index.html">Hobby Page</a>
-                <a href="Client/index.html">Client Page</a>
-                
-            </nav> 
+        <div class="header-box">  
+            <div data-include="components/RoyalHeader.html"></div>
         </div>
     </header>
+
     <main>
-        <h2>Home</h2>
-        <p>Welcome to my website!</p>
-        <p>My name is <strong>Antonio Velazquez</strong> and I am a student at <a href="">UNCC</a>.</p>
-        <p>My favorite hobbies are: Working out, playing video games, driving</p>
+        <div class="main-box">
+            <div class="main-box-trim">
+                <div class="main-box-center">
+        <h2>Our Audience</h2>
+        <p>We strive to help as many rising graduate as possible, thats why weve come to University of North Carolina Charlotte! 
+            We aim to aquire as much new tallent as possible, to both help people coming into the workplace and to help companys expand their buisnesses. 
+        </p>
+        <figure class="image-container">
+        <img class="School" src="RoyalRecruit/images/School.jpg" 
+        srcset="RoyalRecruit/images/School.jpg 700w, RoyalRecruit/images/School.jpg 1400w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        width="700" height="525" loading="lazy" alt="UNC Charlotte Student Union">
+        </figure>
+            </div>
+        </div>
+    </div>
+
     </main>
     <footer class="footer">
-        <div class="container">
-        <div class="box">
-            <div class="footerLinks">
-                <nav>
-                    <a href="https://github.com/AntonioX-XVelazquez">Github</a>||
-                    <a href="https://github.com/AntonioX-XVelazquez/AntonioX-XVelazquez.github.io">Github.io</a>||
-                    <a href="https://www.linkedin.com/feed/">Linkedin</a>
-                </nav> 
-            </div>
-            <div class="footerLinks">
-                <nav>
-                    Designed by Antonio Velazquez, <a href="https://www.freecodecamp.org/certification/AntonioVelazquez/responsive-web-design"><i>Certified in Responsive Web Design</i></a>
-                </nav> 
-            </div>
-        </div>
-        </div>
+        <div data-include="components/RoyalFooter.html"></div>
     </footer>
+    <script src="RoyalRecruit/scripts/HTMLInclude.min.js"></script>
 
 </body>
 </html>
