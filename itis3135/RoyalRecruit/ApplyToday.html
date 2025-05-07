@@ -28,21 +28,21 @@
 
                     <form action="https://formspree.io/f/xldbbevy" method="post">
 
-                        <label for="position" style="text-align: center;">Personal Information</label><br>
+                        <label style="text-align: center;">Personal Information</label><br>
 
-                        <label for="name" >First Name:</label>
-                        <input type="text" id="name" name="firstName" required placeholder ="">
+                        <label>First Name:</label>
+                        <input type="text" id="Firstname" name="firstName" required placeholder ="">
 
-                        <label for="name" >Last Name:</label>
-                        <input type="text" id="name" name="lastName" required placeholder ="">
+                        <label>Last Name:</label>
+                        <input type="text" id="Lastname" name="lastName" required placeholder ="">
 
-                        <label for="email">Email:</label>
+                        <label>Email:</label>
                         <input type="email" id="email" name="email" required>
 
-                        <label for="phone">Phone Number:</label>
-                        <input type="phone" id="phone" name="phone" required>
+                        <label>Phone Number:</label>
+                        <input type="number" id="phone" name="phone" required>
 
-                        <label for="state">State:</label>
+                        <label>State:</label>
                         <select id="state" name="state" required>
                             <option value="" disabled selected>-- Select --</option>
                             <option value="FL">Florida</option>
@@ -53,14 +53,14 @@
                             <option value="GA">Georgia</option>
                         </select>
 
-                        <label for="city">Select a City:</label>
+                        <label>Select a City:</label>
                         <select id="city" name="city" disabled required>
                             <option value="" disabled selected>-- Select --</option>
                         </select>
 
-                        <label for="position" style="text-align: center;">Current Occupation</label> <br>
+                        <label style="text-align: center;">Current Occupation</label> <br>
 
-                        <label for="employmentStatus">Employment Status:</label>
+                        <label >Employment Status:</label>
                         <select id="employmentStatus" name="employmentStatus">
                         <option value="">-- Select --</option>
                         <option value="unemployed">Unemployed</option>
@@ -69,11 +69,11 @@
                         </select>
 
                         <div id="employmentHoursDiv" class="hidden">
-                        <label for="employmentHours">How many hours per week?</label>
+                        <label>How many hours per week?</label>
                         <input type="number" id="employmentHours" name="employmentHours" min="0">
                         </div>
 
-                        <label for="collegeStatus">College Status:</label>
+                        <label >College Status:</label>
                         <select id="collegeStatus" name="collegeStatus">
                         <option value="">-- Select --</option>
                         <option value="not-student">Not a Student</option>
@@ -81,17 +81,15 @@
                         </select>
 
                         <div id="creditHoursDiv" class="hidden">
-                        <label for="creditHours">How many credit hours?</label>
+                        <label >How many credit hours?</label>
                         <input type="number" id="creditHours" name="creditHours" min="0">
                         </div><br>
 
-                        <label for="position" style="text-align: center;">Skills & Prior Work Experience</label>
-                        <textarea  type="text" id="skills" name="skills" rows="15" cols="50"></textarea><br>
+                        <label style="text-align: center;">Skills & Prior Work Experience</label>
+                        <textarea id="skills" name="skills" rows="15" cols="50"></textarea><br>
 
                         <input class="submit" type="submit" value="Submit Application">
                     </form>
-                </form>
-            </section>
             </div>
         </div>
     </div>
